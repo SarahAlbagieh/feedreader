@@ -106,7 +106,7 @@ $(function() {
         //first Call:
         beforeEach(function(done) {
             loadFeed(0, function(){
-                        //storing the content
+        //storing the content
         firstContent = $('.entry').text();
         done();
 
@@ -116,19 +116,16 @@ $(function() {
         //Second Call:
         beforeEach(function(done) {
             loadFeed(1, function(){
-                        //storing the content
+        //storing the content
         secondContent = $('.entry').text();
         done();
 
             });
         });
 
-
-
-
         it('the content actually changes', function(done) {
 
-            //comparing the old and the new content
+            //comparing the first and the second content
 
             expect(firstContent).not.toEqual(secondContent);
 
