@@ -105,20 +105,20 @@ $(function() {
         //cheking if the content changes after call load feed function
         //first Call:
         beforeEach(function(done) {
-            loadFeed(0, function(){
-        //storing the content
-        firstContent = $('.entry').text();
-        done();
+            loadFeed(0, function() {
+                //storing the content
+                firstContent = $('.entry').text();
+                done();
 
             });
         });
 
         //Second Call:
         beforeEach(function(done) {
-            loadFeed(1, function(){
-        //storing the content
-        secondContent = $('.entry').text();
-        done();
+            loadFeed(1, function() {
+                //storing the content
+                secondContent = $('.entry').text();
+                done();
 
             });
         });
